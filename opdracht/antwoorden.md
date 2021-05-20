@@ -7,6 +7,6 @@
 3. Copy paste je gemaakte SQL query hieronder
    SELECT drivers.forename, drivers.surname, pitstops.duration from drivers LEFT join pitstops on drivers.driverId = pitstops.driverId WHERE pitstops.milliseconds < 25000
 4. Copy paste je gemaakte SQL query hieronder
-   
+   SELECT constructors.name'constructor' , races.name'GrandPrix' from races left join constructors on races.circuitId = races.circuitId WHERE constructors.name = 'McLaren'
 5. Copy paste je gemaakte SQL query hieronder
-   
+   SELECT circuits.name'circuit', circuits.country, races.name'GrandPrix', drivers.surname FROM races left join circuits on circuits.circuitId = races.circuitId left join drivers on races.circuitId WHERE races.year= 1950 and drivers.surname like 'f%'
